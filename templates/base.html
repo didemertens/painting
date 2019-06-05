@@ -1,9 +1,19 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Paint your Mood</title>
+  {#   bootstrap / font icons #}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  {# local style #}
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
+  <base target="_blank">
+
   {% block body %}
 
   {% endblock body %}
