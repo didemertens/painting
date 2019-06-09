@@ -1,15 +1,35 @@
+// Mondriaan style
+$yellow-mondriaan: #DDC52B;
+$red-mondriaan: #D1372D;
+$blue-mondriaan: #091A6B;
+$black-mondriaan: #050505;
+
+// basic style
 $dark-color: #111;
 $light-color: #eee;
 
-body.dark-mode {
-  background-color: $dark-color;
-  color: $light-color;
-  a {
-    color: $dark-color;
+// rembrandt style
+$brown-rembrandt: #503016;
+$pink-rembrandt: #E8BA90;
+$brownred-rembrandt: #522715;
+$black-rembrandt: #140E15;
+
+// van gogh style
+$darkblue-gogh: #17315F;
+$lightblue-gogh: #B8CBD3;
+$yellow-gogh: #DDBF4B;
+$green-gogh: #1E373F;
+$blackblue-gogh: #060F1C;
+
+body.mondriaan-mode {
+  background-color: $yellow-mondriaan;
+  color: $red-mondriaan;
+  h1 {
+    color: $blue-mondriaan;
   }
   button {
-    background-color: $light-color;
-    color: $dark-color;
+    background-color: $blue-mondriaan;
+    color: $yellow-mondriaan;
   }
 }
 
@@ -20,7 +40,31 @@ body.light-mode {
     color: $dark-color;
   }
   button {
-    background-color: $dark-color;
-    color: $light-color;
+    background-color: $light-color;
+    color: $dark-color;
+  }
+}
+
+body.rembrandt-mode {
+  background-color: $brown-rembrandt;
+  color: $pink-rembrandt;
+  h1 {
+    color: $black-rembrandt;
+  }
+  button {
+    background-color: $brownred-rembrandt;
+    color: $pink-rembrandt;
+  }
+}
+
+body.gogh-mode {
+  background-color: $darkblue-gogh;
+  color: $yellow-gogh;
+  h1 {
+    color: $blackblue-gogh;
+  }
+  button {
+    background-color: $lightblue-gogh;
+    color: $green-gogh;
   }
 }

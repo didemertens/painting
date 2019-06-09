@@ -1,13 +1,13 @@
-body.dark-mode {
-  background-color: #111;
-  color: #eee;
+body.mondriaan-mode {
+  background-color: #DDC52B;
+  color: #D1372D;
 }
-body.dark-mode a {
-  color: #111;
+body.mondriaan-mode h1 {
+  color: #091A6B;
 }
-body.dark-mode button {
-  background-color: #eee;
-  color: #111;
+body.mondriaan-mode button {
+  background-color: #091A6B;
+  color: #DDC52B;
 }
 
 body.light-mode {
@@ -18,8 +18,32 @@ body.light-mode a {
   color: #111;
 }
 body.light-mode button {
-  background-color: #111;
-  color: #eee;
+  background-color: #eee;
+  color: #111;
+}
+
+body.rembrandt-mode {
+  background-color: #503016;
+  color: #E8BA90;
+}
+body.rembrandt-mode h1 {
+  color: #140E15;
+}
+body.rembrandt-mode button {
+  background-color: #522715;
+  color: #E8BA90;
+}
+
+body.gogh-mode {
+  background-color: #17315F;
+  color: #DDBF4B;
+}
+body.gogh-mode h1 {
+  color: #060F1C;
+}
+body.gogh-mode button {
+  background-color: #B8CBD3;
+  color: #1E373F;
 }
 
 /*# sourceMappingURL=base.css.map */
