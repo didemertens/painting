@@ -3,18 +3,18 @@
 {% block body %}
 
 <body id="body" class="dark-mode">
+  <div id="toggle-painters">
+    <button type="button" name="rembrandt_light" onclick="toggleRembrandtLight()">Rembrandt van Rijn</button>
+    <button type="button" name="mondriaan_light" onclick="toggleMondriaanLight()">Piet Mondriaan</button>
+    <button type="button" name="gogh_light" onclick="toggleGoghLight()">Vincent van Gogh</button>
+    <button type="button" name="lightmode" onclick="LightMode()">X</button>
+  </div>
+
   <h1>Paint your Mood</h1>
-  <h1>Dark/Light Mode Switcher</h1>
 
-  <button type="button" name="mondriaan_light" onclick="toggleMondriaanLight()">Piet Mondriaan</button>
-  <button type="button" name="rembrandt_light" onclick="toggleRembrandtLight()">Rembrandt van Rijn</button>
-  <button type="button" name="gogh_light" onclick="toggleGoghLight()">Vincent van Gogh</button>
-  <button type="button" name="lightmode" onclick="LightMode()">X</button>
+  <p>Want some inspiration? Just want to look at some paintings?
+  You're on the right website!</p>
 
-
-
-  <p>Just press the button above to toggle!</p>
 
 <script src="static/js/toggle.js"></script>
-
 {% endblock body %}
