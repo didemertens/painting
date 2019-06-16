@@ -1,20 +1,44 @@
 #intro-text {
   text-align: center;
-  height: 200px;
+  height: 250px;
 }
 
 #toggle-painters {
+  display: flex;
+  margin-top: 5px;
   padding: 15px;
-  text-align: right;
+}
+
+#toggle-2-btns {
+  margin-top: 0;
+  display: flex;
 }
 
 button {
   border-radius: 5px;
   border-style: solid;
+  margin: 2px;
 }
 
+@media (max-width: 650px) {
+  #toggle-painters {
+    text-align: center;
+    display: block;
+  }
+
+  #toggle-2-btns {
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+  }
+
+  button {
+    padding: 2px;
+    margin: 1px;
+  }
+}
 #intro-text.light-mode {
-  background-color: #eee;
+  background-color: #F7F7F7;
   color: #111;
   border-bottom: 5px solid #111;
 }
@@ -22,14 +46,14 @@ button {
   color: #111;
 }
 #intro-text.light-mode button {
-  background-color: #eee;
+  background-color: #F7F7F7;
   border: 2px solid #111;
   color: #111;
 }
 #intro-text.light-mode button:hover {
   background-color: #111;
   border: 2px solid #111;
-  color: #eee;
+  color: #F7F7F7;
 }
 
 #intro-text.mondriaan-mode {
@@ -90,21 +114,21 @@ button {
 }
 
 body {
-  background-color: #eee;
+  background-color: #F7F7F7;
   color: #111;
 }
 body a {
   color: #111;
 }
 body button {
-  background-color: #eee;
+  background-color: #F7F7F7;
   border: 2px solid #111;
   color: #111;
 }
 body button:hover {
   background-color: #111;
   border: 2px solid #111;
-  color: #eee;
+  color: #F7F7F7;
 }
 body #intro-text {
   border-bottom: 5px solid #111;

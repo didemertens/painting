@@ -1,6 +1,6 @@
 // basic style
 $dark-color: #111;
-$light-color: #eee;
+$light-color: #F7F7F7;
 
 // Mondriaan style
 $yellow-mondriaan: #DDC52B;
@@ -22,16 +22,7 @@ $yellow-title-gogh: #B78428;
 $white-gogh: #D3E5EE;
 $blackblue-gogh: #060F1C;
 
-#toggle-painters{
-  padding: 15px;
-  text-align: right;
-}
-
-button{
-  border-radius: 5px;
-  border-style: solid;
-}
-
+// light-mode (normal)
 
 #intro-text.light-mode {
   background-color: $light-color;
@@ -52,6 +43,8 @@ button{
   }
 }
 
+// Piet Mondriaan mode
+
 #intro-text.mondriaan-mode {
   background-color: $yellow-mondriaan;
   color: $red-mondriaan;
@@ -71,6 +64,8 @@ button{
   }
 }
 
+// Rembrandt van Rijn mode
+
 #intro-text.rembrandt-mode {
   background-color: $brown-rembrandt;
   color: $pink-rembrandt;
@@ -89,6 +84,8 @@ button{
     }
   }
 }
+
+// Vincent van Gogh mode
 
 #intro-text.gogh-mode {
   background-color: $darkblue-gogh;

@@ -1,4 +1,37 @@
 #intro-text{
   text-align: center;
-  height: 200px;
+  height: 250px;
+}
+
+#toggle-painters{
+  display: flex;
+  margin-top: 5px;
+  padding: 15px;
+}
+
+#toggle-2-btns{
+  margin-top: 0;
+  display: flex;
+}
+
+button{
+  border-radius: 5px;
+  border-style: solid;
+  margin: 2px;
+}
+
+@media (max-width: 650px) {
+  #toggle-painters{
+    text-align: center;
+    display: block;
+  }
+  #toggle-2-btns{
+    margin-top: 5px;
+    text-align: center;
+    display: block;
+  }
+  button{
+    padding: 2px;
+    margin: 1px;
+  }
 }
