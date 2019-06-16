@@ -1,14 +1,18 @@
-function toggleMondriaanLight() {
-  var intro = document.getElementById("intro-text");
-  var currentClass = intro.className;
-  var factMondriaan = document.getElementById("fact-Mondriaan");
+function iterateFacts(){
   var factsPainter = document.getElementsByClassName("facts-painter");
-  intro.className = currentClass == "mondriaan-mode" ? "light-mode" : "mondriaan-mode";
-
   var i;
   for (i = 0; i < factsPainter.length; i++) {
     factsPainter[i].style.display = "none";
   }
+}
+
+function toggleMondriaanLight() {
+  var intro = document.getElementById("intro-text");
+  var currentClass = intro.className;
+  var factMondriaan = document.getElementById("fact-Mondriaan");
+  intro.className = currentClass == "mondriaan-mode" ? "light-mode" : "mondriaan-mode";
+
+  iterateFacts();
   factMondriaan.style.display = "block";
 
 }
@@ -17,13 +21,9 @@ function toggleRembrandtLight() {
   var intro = document.getElementById("intro-text");
   var currentClass = intro.className;
   var factRembrandt = document.getElementById("fact-Rembrandt");
-  var factsPainter = document.getElementsByClassName("facts-painter");
   intro.className = currentClass == "rembrandt-mode" ? "light-mode" : "rembrandt-mode";
 
-  var i;
-  for (i = 0; i < factsPainter.length; i++) {
-    factsPainter[i].style.display = "none";
-  }
+  iterateFacts();
   factRembrandt.style.display = "block";
 }
 
@@ -31,13 +31,9 @@ function toggleGoghLight() {
   var intro = document.getElementById("intro-text");
   var currentClass = intro.className;
   var factGogh = document.getElementById("fact-Gogh");
-  var factsPainter = document.getElementsByClassName("facts-painter");
   intro.className = currentClass == "gogh-mode" ? "light-mode" : "gogh-mode";
 
-  var i;
-  for (i = 0; i < factsPainter.length; i++) {
-    factsPainter[i].style.display = "none";
-  }
+  iterateFacts();
   factGogh.style.display = "block";
 }
 
@@ -46,11 +42,7 @@ function LightMode() {
   var currentClass = intro.className;
   var factsPainter = document.getElementsByClassName("facts-painter");
   intro.className = "light-mode";
-
-  var i;
-  for (i = 0; i < factsPainter.length; i++) {
-    factsPainter[i].style.display = "none";
-  }
+  iterateFacts();
 }
 
 
