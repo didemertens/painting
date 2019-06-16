@@ -37,6 +37,18 @@ button {
     margin: 1px;
   }
 }
+#fact-Mondriaan {
+  display: none;
+}
+
+#fact-Rembrandt {
+  display: none;
+}
+
+#fact-Gogh {
+  display: none;
+}
+
 #intro-text.light-mode {
   background-color: #F7F7F7;
   color: #111;
