@@ -73,6 +73,7 @@ button {
 #intro-text.light-mode #fact-painter-box {
   border-bottom: 5px solid #111;
   height: 145px;
+  background-image: url(https://static1.squarespace.com/static/579a733c6b8f5b8f49589edc/t/57b60e27c534a57897b4a854/1471549005008/paint-brushes.jpg?format=1000w);
 }
 
 #intro-text.mondriaan-mode {
@@ -93,6 +94,10 @@ button {
   color: #050505;
 }
 #intro-text.mondriaan-mode #fact-painter-box {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  background-image: none;
   background-color: #091A6B;
   font-size: 16pt;
   height: 145px;
@@ -118,6 +123,10 @@ button {
   color: #140B08;
 }
 #intro-text.rembrandt-mode #fact-painter-box {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  background-image: none;
   font-size: 16pt;
   height: 145px;
   background-color: #413222;
@@ -143,6 +152,10 @@ button {
   color: #C0A532;
 }
 #intro-text.gogh-mode #fact-painter-box {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  background-image: none;
   background-color: #0E1F4F;
   height: 145px;
   font-size: 16pt;
@@ -170,6 +183,8 @@ body button:hover {
 body #fact-painter-box {
   border-bottom: 5px solid #111;
   height: 145px;
+  background-image: url(https://static1.squarespace.com/static/579a733c6b8f5b8f49589edc/t/57b60e27c534a57897b4a854/1471549005008/paint-brushes.jpg?format=1000w);
+  z-index: -1;
 }
 
 /*# sourceMappingURL=base.css.map */
