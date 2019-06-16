@@ -71,7 +71,6 @@ button {
 #intro-text.mondriaan-mode {
   background-color: #DDC52B;
   color: #D1372D;
-  border-bottom: 5px solid #091A6B;
 }
 #intro-text.mondriaan-mode h1 {
   color: #091A6B;
@@ -86,11 +85,16 @@ button {
   border: 2px solid #D1372D;
   color: #050505;
 }
+#intro-text.mondriaan-mode #fact-painter-box {
+  background-color: #091A6B;
+  font-size: 16pt;
+  height: 145px;
+  color: #DDC52B;
+}
 
 #intro-text.rembrandt-mode {
   background-color: #806039;
   color: #E8BA90;
-  border-bottom: 5px solid #522715;
 }
 #intro-text.rembrandt-mode h1 {
   color: #140B08;
@@ -105,24 +109,35 @@ button {
   border: 2px solid #E8BA90;
   color: #140B08;
 }
+#intro-text.rembrandt-mode #fact-painter-box {
+  font-size: 16pt;
+  height: 145px;
+  background-color: #413222;
+  color: #F0C7A5;
+}
 
 #intro-text.gogh-mode {
-  background-color: #152C74;
-  color: #C0A532;
-  border-bottom: 5px solid #4E69A3;
+  background-color: #3F60A1;
+  color: #0E1F4F;
 }
 #intro-text.gogh-mode h1 {
   color: #B78428;
 }
 #intro-text.gogh-mode button {
-  background-color: #4E69A3;
-  border: 2px solid #4E69A3;
-  color: #D3E5EE;
+  background-color: #C0A532;
+  color: #060F1C;
+  border: 2px solid #C0A532;
 }
 #intro-text.gogh-mode button:hover {
-  background-color: #C0A532;
-  border: 2px solid #C0A532;
-  color: #060F1C;
+  background-color: #0E1F4F;
+  border: 2px solid #0E1F4F;
+  color: #C0A532;
+}
+#intro-text.gogh-mode #fact-painter-box {
+  background-color: #0E1F4F;
+  height: 145px;
+  font-size: 16pt;
+  color: #C0A532;
 }
 
 body {

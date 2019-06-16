@@ -13,9 +13,13 @@ $brown-rembrandt: #806039;
 $pink-rembrandt: #E8BA90;
 $brownred-rembrandt: #522715;
 $black-rembrandt: #140B08;
+$bright-pink-rembrandt: #F0C7A5;
+$darkbrown-rembrandt: #413222;
 
 // van gogh style
-$darkblue-gogh: #152C74;
+$dark-gogh: #0E1F4F;
+// $darkblue-gogh: #152C74;
+$background-blue-gogh: #3F60A1;
 $lightblue-gogh: #4E69A3;
 $yellow-gogh: #C0A532;
 $yellow-title-gogh: #B78428;
@@ -48,7 +52,6 @@ $blackblue-gogh: #060F1C;
 #intro-text.mondriaan-mode {
   background-color: $yellow-mondriaan;
   color: $red-mondriaan;
-  border-bottom: 5px solid $blue-mondriaan;
   h1 {
     color: $blue-mondriaan;
   }
@@ -62,6 +65,12 @@ $blackblue-gogh: #060F1C;
       color: $black-mondriaan;
     }
   }
+  #fact-painter-box{
+    background-color: $blue-mondriaan;
+    font-size: 16pt;
+    height: 145px;
+    color: $yellow-mondriaan;
+  }
 }
 
 // Rembrandt van Rijn mode
@@ -69,7 +78,6 @@ $blackblue-gogh: #060F1C;
 #intro-text.rembrandt-mode {
   background-color: $brown-rembrandt;
   color: $pink-rembrandt;
-  border-bottom: 5px solid $brownred-rembrandt;
   h1 {
     color: $black-rembrandt;
   }
@@ -83,25 +91,36 @@ $blackblue-gogh: #060F1C;
       color: $black-rembrandt;
     }
   }
+  #fact-painter-box{
+    font-size: 16pt;
+    height: 145px;
+    background-color: $darkbrown-rembrandt;
+    color: $bright-pink-rembrandt;
+  }
 }
 
 // Vincent van Gogh mode
 
 #intro-text.gogh-mode {
-  background-color: $darkblue-gogh;
-  color: $yellow-gogh;
-  border-bottom: 5px solid $lightblue-gogh;
+  background-color: $background-blue-gogh;
+  color: $dark-gogh;
   h1 {
     color: $yellow-title-gogh;
   }
   button {
-    background-color: $lightblue-gogh;
-    border: 2px solid $lightblue-gogh;
-    color: $white-gogh;
+    background-color: $yellow-gogh;
+    color: $blackblue-gogh;
+    border: 2px solid $yellow-gogh;
     &:hover{
-      background-color: $yellow-gogh;
-      border: 2px solid $yellow-gogh;
-      color: $blackblue-gogh;
+      background-color: $dark-gogh;
+      border: 2px solid $dark-gogh;
+      color: $yellow-gogh;
     }
+  }
+  #fact-painter-box{
+    background-color: $dark-gogh;
+    height: 145px;
+    font-size: 16pt;
+    color: $yellow-gogh;
   }
 }
