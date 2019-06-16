@@ -9,16 +9,17 @@ $blue-mondriaan: #091A6B;
 $black-mondriaan: #050505;
 
 // rembrandt style
-$brown-rembrandt: #503016;
+$brown-rembrandt: #806039;
 $pink-rembrandt: #E8BA90;
 $brownred-rembrandt: #522715;
-$black-rembrandt: #140E15;
+$black-rembrandt: #140B08;
 
 // van gogh style
-$darkblue-gogh: #17315F;
-$lightblue-gogh: #B8CBD3;
-$yellow-gogh: #DDBF4B;
-$green-gogh: #1E373F;
+$darkblue-gogh: #152C74;
+$lightblue-gogh: #4E69A3;
+$yellow-gogh: #C0A532;
+$yellow-title-gogh: #B78428;
+$white-gogh: #D3E5EE;
 $blackblue-gogh: #060F1C;
 
 #toggle-painters{
@@ -32,9 +33,10 @@ button{
 }
 
 
-body.light-mode {
+#intro-text.light-mode {
   background-color: $light-color;
   color: $dark-color;
+  border-bottom: 5px solid $dark-color;
   a {
     color: $dark-color;
   }
@@ -42,12 +44,18 @@ body.light-mode {
     background-color: $light-color;
     border: 2px solid $dark-color;
     color: $dark-color;
+    &:hover{
+      background-color: $dark-color;
+      border: 2px solid $dark-color;
+      color: $light-color;
+    }
   }
 }
 
-body.mondriaan-mode {
+#intro-text.mondriaan-mode {
   background-color: $yellow-mondriaan;
   color: $red-mondriaan;
+  border-bottom: 5px solid $blue-mondriaan;
   h1 {
     color: $blue-mondriaan;
   }
@@ -55,12 +63,18 @@ body.mondriaan-mode {
     background-color: $blue-mondriaan;
     border: 2px solid $blue-mondriaan;
     color: $yellow-mondriaan;
+    &:hover{
+      background-color: $red-mondriaan;
+      border: 2px solid $red-mondriaan;
+      color: $black-mondriaan;
+    }
   }
 }
 
-body.rembrandt-mode {
+#intro-text.rembrandt-mode {
   background-color: $brown-rembrandt;
   color: $pink-rembrandt;
+  border-bottom: 5px solid $brownred-rembrandt;
   h1 {
     color: $black-rembrandt;
   }
@@ -68,18 +82,29 @@ body.rembrandt-mode {
     background-color: $brownred-rembrandt;
     border: 2px solid $brownred-rembrandt;
     color: $pink-rembrandt;
+    &:hover{
+      background-color: $pink-rembrandt;
+      border: 2px solid $pink-rembrandt;
+      color: $black-rembrandt;
+    }
   }
 }
 
-body.gogh-mode {
+#intro-text.gogh-mode {
   background-color: $darkblue-gogh;
   color: $yellow-gogh;
+  border-bottom: 5px solid $lightblue-gogh;
   h1 {
-    color: $blackblue-gogh;
+    color: $yellow-title-gogh;
   }
   button {
     background-color: $lightblue-gogh;
     border: 2px solid $lightblue-gogh;
-    color: $green-gogh;
+    color: $white-gogh;
+    &:hover{
+      background-color: $yellow-gogh;
+      border: 2px solid $yellow-gogh;
+      color: $blackblue-gogh;
+    }
   }
 }

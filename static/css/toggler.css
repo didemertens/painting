@@ -8,56 +8,80 @@ button {
   border-style: solid;
 }
 
-body.light-mode {
+#intro-text.light-mode {
   background-color: #eee;
   color: #111;
+  border-bottom: 5px solid #111;
 }
-body.light-mode a {
+#intro-text.light-mode a {
   color: #111;
 }
-body.light-mode button {
+#intro-text.light-mode button {
   background-color: #eee;
   border: 2px solid #111;
   color: #111;
 }
+#intro-text.light-mode button:hover {
+  background-color: #111;
+  border: 2px solid #111;
+  color: #eee;
+}
 
-body.mondriaan-mode {
+#intro-text.mondriaan-mode {
   background-color: #DDC52B;
   color: #D1372D;
+  border-bottom: 5px solid #091A6B;
 }
-body.mondriaan-mode h1 {
+#intro-text.mondriaan-mode h1 {
   color: #091A6B;
 }
-body.mondriaan-mode button {
+#intro-text.mondriaan-mode button {
   background-color: #091A6B;
   border: 2px solid #091A6B;
   color: #DDC52B;
 }
+#intro-text.mondriaan-mode button:hover {
+  background-color: #D1372D;
+  border: 2px solid #D1372D;
+  color: #050505;
+}
 
-body.rembrandt-mode {
-  background-color: #503016;
+#intro-text.rembrandt-mode {
+  background-color: #806039;
   color: #E8BA90;
+  border-bottom: 5px solid #522715;
 }
-body.rembrandt-mode h1 {
-  color: #140E15;
+#intro-text.rembrandt-mode h1 {
+  color: #140B08;
 }
-body.rembrandt-mode button {
+#intro-text.rembrandt-mode button {
   background-color: #522715;
   border: 2px solid #522715;
   color: #E8BA90;
 }
+#intro-text.rembrandt-mode button:hover {
+  background-color: #E8BA90;
+  border: 2px solid #E8BA90;
+  color: #140B08;
+}
 
-body.gogh-mode {
-  background-color: #17315F;
-  color: #DDBF4B;
+#intro-text.gogh-mode {
+  background-color: #152C74;
+  color: #C0A532;
+  border-bottom: 5px solid #4E69A3;
 }
-body.gogh-mode h1 {
+#intro-text.gogh-mode h1 {
+  color: #B78428;
+}
+#intro-text.gogh-mode button {
+  background-color: #4E69A3;
+  border: 2px solid #4E69A3;
+  color: #D3E5EE;
+}
+#intro-text.gogh-mode button:hover {
+  background-color: #C0A532;
+  border: 2px solid #C0A532;
   color: #060F1C;
-}
-body.gogh-mode button {
-  background-color: #B8CBD3;
-  border: 2px solid #B8CBD3;
-  color: #1E373F;
 }
 
 /*# sourceMappingURL=toggler.css.map */
