@@ -1,6 +1,10 @@
+#website-title {
+  font-size: 40pt;
+}
+
 #intro-text {
   text-align: center;
-  height: 300px;
+  height: 309px;
 }
 
 #toggle-painters {
@@ -52,7 +56,6 @@ button {
 #intro-text.light-mode {
   background-color: #F7F7F7;
   color: #111;
-  border-bottom: 5px solid #111;
 }
 #intro-text.light-mode a {
   color: #111;
@@ -66,6 +69,10 @@ button {
   background-color: #111;
   border: 2px solid #111;
   color: #F7F7F7;
+}
+#intro-text.light-mode #fact-painter-box {
+  border-bottom: 5px solid #111;
+  height: 145px;
 }
 
 #intro-text.mondriaan-mode {
@@ -90,6 +97,7 @@ button {
   font-size: 16pt;
   height: 145px;
   color: #DDC52B;
+  border-bottom: 5px solid #091A6B;
 }
 
 #intro-text.rembrandt-mode {
@@ -114,6 +122,7 @@ button {
   height: 145px;
   background-color: #413222;
   color: #F0C7A5;
+  border-bottom: 5px solid #413222;
 }
 
 #intro-text.gogh-mode {
@@ -138,6 +147,7 @@ button {
   height: 145px;
   font-size: 16pt;
   color: #C0A532;
+  border-bottom: 5px solid #0E1F4F;
 }
 
 body {
@@ -157,8 +167,9 @@ body button:hover {
   border: 2px solid #111;
   color: #F7F7F7;
 }
-body #intro-text {
+body #fact-painter-box {
   border-bottom: 5px solid #111;
+  height: 145px;
 }
 
 /*# sourceMappingURL=base.css.map */

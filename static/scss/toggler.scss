@@ -31,7 +31,6 @@ $blackblue-gogh: #060F1C;
 #intro-text.light-mode {
   background-color: $light-color;
   color: $dark-color;
-  border-bottom: 5px solid $dark-color;
   a {
     color: $dark-color;
   }
@@ -44,6 +43,10 @@ $blackblue-gogh: #060F1C;
       border: 2px solid $dark-color;
       color: $light-color;
     }
+  }
+  #fact-painter-box{
+    border-bottom: 5px solid $dark-color;
+    height: 145px;
   }
 }
 
@@ -70,6 +73,7 @@ $blackblue-gogh: #060F1C;
     font-size: 16pt;
     height: 145px;
     color: $yellow-mondriaan;
+    border-bottom: 5px solid $blue-mondriaan;
   }
 }
 
@@ -96,6 +100,7 @@ $blackblue-gogh: #060F1C;
     height: 145px;
     background-color: $darkbrown-rembrandt;
     color: $bright-pink-rembrandt;
+    border-bottom: 5px solid $darkbrown-rembrandt;
   }
 }
 
@@ -122,5 +127,6 @@ $blackblue-gogh: #060F1C;
     height: 145px;
     font-size: 16pt;
     color: $yellow-gogh;
+    border-bottom: 5px solid $dark-gogh;
   }
 }
