@@ -5,14 +5,15 @@
 <body id="body">
   <div id="intro-text" class="dark-mode">
     <div id="toggle-painters">
-      <button type="button" name="mondriaan_light" onclick="toggleMondriaanLight()">
+      <button type="button" name="mondriaan_light" onclick="toggleMondriaanLight(); HideBtn()">
         Piet Mondriaan</button>
-      <button type="button" name="rembrandt_light" onclick="toggleRembrandtLight()">
+      <button type="button" name="rembrandt_light" onclick="toggleRembrandtLight(); HideBtn()">
         Rembrandt van Rijn</button>
       <div id="toggle-2-btns">
-        <button type="button" name="gogh_light" onclick="toggleGoghLight()">
+        <button type="button" name="gogh_light" onclick="toggleGoghLight(); HideBtn()">
           Vincent van Gogh</button>
-        <button type="button" name="lightmode" onclick="LightMode()">X</button>
+        <button id="close-btn" type="button" name="lightmode"
+          onclick="LightMode(); HideBtn()">X</button>
       </div>
     </div>
 

@@ -21,3 +21,17 @@ function LightMode() {
   var currentClass = intro.className;
   intro.className = "light-mode";
 }
+
+
+function HideBtn() {
+  var intro = document.getElementById("intro-text");
+  var closeBtn = document.getElementById("close-btn");
+  var currentClass = intro.className;
+  if (currentClass === "dark-mode" || currentClass === "light-mode"){
+    closeBtn.style.visibility = 'hidden';
+  } else{
+    closeBtn.style.visibility = 'visible';
+  }
+}
+
+HideBtn();
