@@ -45,7 +45,7 @@ function tabulateAnswers(event) {
     answerbox.innerHTML = "You're painting of the day is Franz Marc's Foxes." + "<br />" + "<img src=\"https://media.overstockart.com/optimized/cache/data/product_images/FM2501-1000x1000.jpg\" width=\"400px\" height=\"500px\">";
   };
   if (c4score == maxscore) { // If user chooses the fourth choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You're painting of the day is Claude Monet's Woman with Umbrella." + "<br />" + "<img src=\"https://imgc.artprintimages.com/img/print/femme-a-l-ombrelle-tournee-vers-la-gauche-woman-with-umbrella-1886_u-l-pi4fre0.jpg?h=550&w=550\" width=\"400px\" height=\"500px\">";
+    answerbox.innerHTML = "You're painting of the day is Mark Rothko's Light Red Over Black." + "<br />" + "<img src=\"https://www.tate.org.uk/art/images/work/T/T00/T00275_10.jpg\" width=\"400px\" height=\"500px\">";
   };
 }
 

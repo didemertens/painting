@@ -38,18 +38,55 @@
     <!-- Question 1 -->
     <h2>Pick a style</h2>
     <!-- Here are the choices for the first question.-->
-    <label><input type="radio" name="q1" value="c1">
-      Realism
+
+
+<div class="option-group">
+  <div class="option-container">
+
+    <input class="option-input" checked id="option-1" type="radio" name="options" name="q1" value="c1" />
+    <input class="option-input" id="option-2" type="radio" name="options" name="q2" value="c2" />
+
+    <label class="option" for="option-1">
+      <span class="option__indicator"></span>
+      <span class="option__label">
+        Realism
+      </span>
     </label>
-    <label><input type="radio" name="q1" value="c2">
-      Art Deco
-    </label><br>
-    <label><input type="radio" name="q1" value="c3">
-      Cubism
+
+    <label class="option" for="option-2">
+      <span class="option__indicator"></span>
+      <span class="option__label">
+        Art Deco
+      </span>
     </label>
-    <label><input type="radio" name="q1" value="c4">
-      Impressionism
-    </label><br>
+
+  </div>
+</div>
+<div class="option-group">
+  <div class="option-container">
+
+    <input class="option-input" id="option-3" type="radio" name="options" name="q3" value="c3"/>
+    <input class="option-input" id="option-4" type="radio" name="options" name="q4" value="c4" />
+
+    <label class="option" for="option-3">
+      <span class="option__indicator"></span>
+      <span class="option__label">
+        Cubism
+      </span>
+    </label>
+
+    <label class="option" for="option-4">
+      <span class="option__indicator"></span>
+      <span class="option__label">
+        Abstract
+      </span>
+    </label>
+
+  </div>
+</div>
+
+
+
 
   <button type="submit" id="submit" onclick="tabulateAnswers(event)">Submit</button>
   <button type="reset" id="reset" onclick="resetAnswer()">Again!</button>
