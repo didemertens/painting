@@ -1,6 +1,7 @@
 // function to calculate the result of the quiz
-function tabulateAnswers() {
+function tabulateAnswers(event) {
   // initialize variables for each choice's scores
+  event.preventDefault();
   var c1score = 0;
   var c2score = 0;
   var c3score = 0;
@@ -8,6 +9,7 @@ function tabulateAnswers() {
 
   // get a list of the radio inputs on the page
   var choices = document.getElementsByTagName('input');
+
   // loop through all the radio inputs
   for (i=0; i<choices.length; i++) {
     // if the radio is checked..
@@ -45,8 +47,8 @@ function tabulateAnswers() {
   if (c4score == maxscore) { // If user chooses the fourth choice the most, this outcome will be displayed.
     answerbox.innerHTML = "You are the future CEO of a new startup! You enjoy taking risks and building the next big thing that no one has even thought of before. For example, billionare Mark Zuckerberg founded Facebook in 2004, a project he started inside his dorm room in college which eventually turned into a social networking revolution that changed the world.";
   }
-  // If you add more choices, you must add another response below.
 }
+
 
 // program the reset button
 function resetAnswer() {
