@@ -163,6 +163,10 @@ button {
   border-bottom: 5px solid #0E1F4F;
 }
 
+#wrapper {
+  text-align: center;
+}
+
 body {
   background-color: #F7F7F7;
   color: #111;
