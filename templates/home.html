@@ -32,55 +32,31 @@
   </div>
 
   <div id="wrapper">
-    <h3 id="title-quiz">Find the perfect painting by answering these questions</h3>
+    <h3 id="title-quiz">Find the perfect painting by answering this question!</h3>
 
   <form id="quiz">
     <!-- Question 1 -->
-    <h2>Old or New?</h2>
+    <h2>Pick a style</h2>
     <!-- Here are the choices for the first question.-->
     <label><input type="radio" name="q1" value="c1">
-      Old
+      Realism
     </label>
     <label><input type="radio" name="q1" value="c2">
-      New
+      Art Deco
+    </label><br>
+    <label><input type="radio" name="q1" value="c3">
+      Cubism
     </label>
-
-    <!-- Question 2 -->
-    <h2>Abstract or Realistic?</h2>
-    <!-- Here are the choices for the second question.-->
-    <label><input type="radio" name="q2" value="c2">
-      Abstract
-    </label>
-    <label><input type="radio" name="q2" value="c1">
-      Realistic
-    </label>
-
-    <!-- Question 3 -->
-    <h2>Man or Woman?</h2>
-    <!-- Choices for the third question -->
-    <label><input type="radio" name="q3" value="c1">
-      Man
-    </label>
-    <label><input type="radio" name="q3" value="c2">
-      Woman
-    </label>
-
-    <!-- Question 4 -->
-    <h2>Light or Dark?</h2>
-    <!-- Choices for the fourth question -->
-    <label><input type="radio" name="q4" value="c2">
-      Light
-    </label>
-    <label><input type="radio" name="q4" value="c1">
-      Dark
+    <label><input type="radio" name="q1" value="c4">
+      Impressionism
     </label><br>
 
-  <button type="submit" id="submit" onclick="tabulateAnswers(event)">Submit Your Answers</button>
-  <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+  <button type="submit" id="submit" onclick="tabulateAnswers(event)">Submit</button>
+  <button type="reset" id="reset" onclick="resetAnswer()">Again!</button>
   </form>
 
 
-  <div id="answer">Your result will show up here!</div>
+  <div id="answer"></div>
 </div>
 
 <script src="static/js/toggle.js"></script>

@@ -37,22 +37,21 @@ function tabulateAnswers(event) {
   var answerbox = document.getElementById('answer');
   if (c1score == maxscore) { // If user chooses the first choice the most, this outcome will be displayed.
     answerbox.innerHTML = "You're painting of the day is Leonardo da Vinci's Lady with an Ermine." + "<br />" + "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/The_Lady_with_an_Ermine.jpg/1200px-The_Lady_with_an_Ermine.jpg\" width=\"400px\" height=\"500px\">";
-  }
+  };
   if (c2score == maxscore) { // If user chooses the second choice the most, this outcome will be displayed.
     answerbox.innerHTML = "You're painting of the day is Tamara de Lempicka's The Brilliance." + "<br />" + "<img src=\"https://www.passionforpaintings.com/69697/the-brilliance-1932-tamara-de-lempicka.jpg\" width=\"400px\" height=\"500px\">";
   };
-  }
-//   if (c3score == maxscore) { // If user chooses the third choice the most, this outcome will be displayed.
-//     answerbox.innerHTML = "You are a developer! Developers create games, apps, social media, movies, and all sorts of fun programs that people enjoy. These coders work on projects such as Minecraft, Poptropica, and Youtube. Developers need sharp coding skills, are great debuggers, and need to work well in a team of other developers.";
-//   }
-//   if (c4score == maxscore) { // If user chooses the fourth choice the most, this outcome will be displayed.
-//     answerbox.innerHTML = "You are the future CEO of a new startup! You enjoy taking risks and building the next big thing that no one has even thought of before. For example, billionare Mark Zuckerberg founded Facebook in 2004, a project he started inside his dorm room in college which eventually turned into a social networking revolution that changed the world.";
-//   }
-// }
+  if (c3score == maxscore) { // If user chooses the third choice the most, this outcome will be displayed.
+    answerbox.innerHTML = "You're painting of the day is Franz Marc's Foxes." + "<br />" + "<img src=\"https://media.overstockart.com/optimized/cache/data/product_images/FM2501-1000x1000.jpg\" width=\"400px\" height=\"500px\">";
+  };
+  if (c4score == maxscore) { // If user chooses the fourth choice the most, this outcome will be displayed.
+    answerbox.innerHTML = "You're painting of the day is Claude Monet's Woman with Umbrella." + "<br />" + "<img src=\"https://imgc.artprintimages.com/img/print/femme-a-l-ombrelle-tournee-vers-la-gauche-woman-with-umbrella-1886_u-l-pi4fre0.jpg?h=550&w=550\" width=\"400px\" height=\"500px\">";
+  };
+}
 
 
 // program the reset button
 function resetAnswer() {
   var answerbox = document.getElementById('answer');
-  answerbox.innerHTML = "Your result will show up here!";
+  answerbox.innerHTML = "Play again!";
 }
