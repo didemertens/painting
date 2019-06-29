@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.shortcuts import render
 import requests
 
@@ -7,7 +8,8 @@ def home(request):
 
 
 def paintingVermeer(request):
-    response = requests.get('https://www.rijksmuseum.nl/api/nl/collection/SK-A-2344?key=2XUwzcR0&format=json')
+    API_KEY = settings.API_KEY
+    response = requests.get('https://www.rijksmuseum.nl/api/nl/collection/SK-A-2344?key=' + API_KEY + '&format=json')
     paint_info = response.json()
     return render(request, 'painting.html', {
         'painter': paint_info['artObject']['principalMaker'],
