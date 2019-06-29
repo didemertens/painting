@@ -7,13 +7,14 @@ def home(request):
 
 
 def paintingVermeer(request):
-    response = requests.get('https://www.rijksmuseum.nl/api/nl/collection/SK-A-2344?key=[API_KEY]&format=json/')
+    response = requests.get('https://www.rijksmuseum.nl/api/nl/collection/SK-A-2344?key=2XUwzcR0&format=json')
     paint_info = response.json()
     return render(request, 'painting.html', {
-        'painter': paint_info['principalMaker'],
-        'painting_title': paint_info['title'],
-        'painting_img' : paint_info['url'],
+        'painter': paint_info['artObject']['principalMaker'],
+        'painting_title': paint_info['artObject']['label']['title'],
+        'painting_img' : paint_info['artObject']['webImage']['url'],
     })
+
 
 # JOHANNES VERMEER
 # https://www.rijksmuseum.nl/api/nl/collection/SK-A-2344?key=[API_KEY]&format=json
