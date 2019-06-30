@@ -316,6 +316,11 @@ button {
   transform: scale(1);
 }
 
+#painting_img_API {
+  height: 500px;
+  width: 400px;
+}
+
 body {
   background-color: #F7F7F7;
   color: #111;
