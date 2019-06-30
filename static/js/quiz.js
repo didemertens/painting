@@ -34,18 +34,31 @@ function tabulateAnswers(event) {
   var maxscore = Math.max(c1score,c2score,c3score,c4score);
 
   // Display answer corresponding to that choice
-  var answerbox = document.getElementById('answer');
+
+  function removePaintings() {
+    var answers_paint;
+    answers_paint = document.getElementById("answers").children;
+    Array.from(answers_paint).forEach(function(element) {
+      element.classList.add("painter-answer");
+    });
+  }
+
+  var answerbox = document.getElementById('answers');
   if (c1score == maxscore) { // If user chooses the first choice the most, this outcome will be displayed.
-    document.getElementById("vermeerbtn").click();
+    removePaintings();
+    document.getElementById("painter-answer-1").classList.remove('painter-answer');
   };
   if (c2score == maxscore) { // If user chooses the second choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You're painting of the day is Tamara de Lempicka's The Brilliance." + "<br />" + "<img src=\"https://www.passionforpaintings.com/69697/the-brilliance-1932-tamara-de-lempicka.jpg\" width=\"400px\" height=\"500px\">";
+    removePaintings();
+    document.getElementById("painter-answer-2").classList.remove('painter-answer');
   };
   if (c3score == maxscore) { // If user chooses the third choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You're painting of the day is Franz Marc's Foxes." + "<br />" + "<img src=\"https://media.overstockart.com/optimized/cache/data/product_images/FM2501-1000x1000.jpg\" width=\"400px\" height=\"500px\">";
+    removePaintings();
+    document.getElementById("painter-answer-3").classList.remove('painter-answer');
   };
   if (c4score == maxscore) { // If user chooses the fourth choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You're painting of the day is Mark Rothko's Light Red Over Black." + "<br />" + "<img src=\"https://www.tate.org.uk/art/images/work/T/T00/T00275_10.jpg\" width=\"400px\" height=\"500px\">";
+    removePaintings();
+    document.getElementById("painter-answer-4").classList.remove('painter-answer');
   };
 }
 

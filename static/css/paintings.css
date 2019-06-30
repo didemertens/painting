@@ -1,3 +1,7 @@
+.painter-answer {
+  display: none;
+}
+
 #painting_img_API {
   height: 500px;
 }

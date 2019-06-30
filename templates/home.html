@@ -85,25 +85,20 @@
 </div>
 
   <button type="submit" id="submit" onclick="tabulateAnswers(event)">Submit</button>
-  <a id="vermeerbtn" href="vermeer/" style="display:none;" >click</a>
 
   <button type="reset" id="reset" onclick="resetAnswer()">Again!</button>
   </form>
 
 
-  <div id="answer"></div>
-</div>
-
-  <h2>RIJKS API</h2>
-
-<div id="painter-answer">
+<div id="answers">
   {% for artist in artists %}
-    <p>{{ artist.painter }}, {{ artist.painting_title }}</p>
-    <br>
-    <img id= "painting_img_API" src="{{ artist.painting_img }}">
+    <div class="painter-answer" id="painter-answer-{{ forloop.counter }}">
+      <p>{{ artist.painter }}, {{ artist.painting_title }}</p>
+      <br>
+      <img id= "painting_img_API" src="{{ artist.painting_img }}">
+    </div>
   {% endfor %}
 </div>
-
 
 <script src="static/js/toggle.js"></script>
 <script src="static/js/quiz.js"></script>

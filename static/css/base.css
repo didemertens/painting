@@ -316,6 +316,10 @@ button {
   transform: scale(1);
 }
 
+.painter-answer {
+  display: none;
+}
+
 #painting_img_API {
   height: 500px;
 }
