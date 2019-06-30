@@ -4,7 +4,23 @@ import requests
 
 # Create your views here.
 def home(request):
-  return render(request,'home.html')
+  vermeer = paintings(request, artist_key='SK-A-2344')
+  avercamp = paintings(request, artist_key='SK-A-1718')
+  breitner = paintings(request, artist_key='SK-A-3584')
+  mauvre = paintings(request, artist_key='SK-A-3602')
+  artists = {'vermeer' : vermeer, 'avercamp' : avercamp, 'breitner' : breitner, 'mauvre' : mauvre}
+  return render(request, 'home.html', artists)
+
+
+def paintings(request,artist_key):
+    API_KEY = settings.API_KEY
+    response = requests.get('https://www.rijksmuseum.nl/api/nl/collection/' + artist_key + '?key=' + API_KEY + '&format=json')
+    paint_info = response.json()
+    return {
+        'painter': paint_info['artObject']['principalMaker'],
+        'painting_title': paint_info['artObject']['label']['title'],
+        'painting_img' : paint_info['artObject']['webImage']['url'],
+    }
 
 
 def paintingVermeer(request):
