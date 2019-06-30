@@ -36,7 +36,7 @@ function tabulateAnswers(event) {
   // Display answer corresponding to that choice
   var answerbox = document.getElementById('answer');
   if (c1score == maxscore) { // If user chooses the first choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You're painting of the day is Leonardo da Vinci's Lady with an Ermine." + "<br />" + "<img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/The_Lady_with_an_Ermine.jpg/1200px-The_Lady_with_an_Ermine.jpg\" width=\"400px\" height=\"500px\">";
+    answerbox.innerHTML = await (await fetch('painting.html')).text();
   };
   if (c2score == maxscore) { // If user chooses the second choice the most, this outcome will be displayed.
     answerbox.innerHTML = "You're painting of the day is Tamara de Lempicka's The Brilliance." + "<br />" + "<img src=\"https://www.passionforpaintings.com/69697/the-brilliance-1932-tamara-de-lempicka.jpg\" width=\"400px\" height=\"500px\">";
