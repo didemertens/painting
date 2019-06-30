@@ -96,30 +96,14 @@
 
   <h2>RIJKS API</h2>
 
-<div id="vermeer-answer">
-  <p>{{ vermeer.painter }}, {{ vermeer.painting_title }}</p>
-  <br>
-  <img id= "painting_img_API" src="{{ vermeer.painting_img }}">
+<div id="painter-answer">
+  {% for artist in artists %}
+    <p>{{ artist.painter }}, {{ artist.painting_title }}</p>
+    <br>
+    <img id= "painting_img_API" src="{{ artist.painting_img }}">
+  {% endfor %}
 </div>
 
-<div id="avercamp-answer">
-  <p>{{ avercamp.painter }}, {{ avercamp.painting_title }}</p>
-  <br>
-  <img id= "painting_img_API" src="{{ avercamp.painting_img }}">
-</div>
-
-
-<div id="appel-answer">
-  <p>{{ appel.painter }}, {{ appel.painting_title }}</p>
-  <br>
-  <img id= "painting_img_API" src="{{ appel.painting_img }}">
-</div>
-
-<div id="mauvre-answer">
-  <p>{{ mauvre.painter }}, {{ mauvre.painting_title }}</p>
-  <br>
-  <img id= "painting_img_API" src="{{ mauvre.painting_img }}">
-</div>
 
 <script src="static/js/toggle.js"></script>
 <script src="static/js/quiz.js"></script>
