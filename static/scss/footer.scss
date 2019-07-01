@@ -1,0 +1,19 @@
+#footer{
+  margin-bottom: 0;
+  margin-top: 100px;
+  background-color: #d7dade;
+  height: 50px;
+}
+
+#rijks-API{
+  text-decoration: none;
+  margin-top: 100px;
+  &:hover {
+    border-bottom: 2px solid #01420c;
+    color: black;
+  }
+}
+
+#footer-API{
+  text-align: left;
+}

@@ -36,7 +36,7 @@
 
   <form id="quiz">
     <!-- Question 1 -->
-    <h2>Pick a style</h2>
+    <h2>Pick a colour</h2>
     <!-- Here are the choices for the first question.-->
 
 <div class="option-group">
@@ -48,14 +48,14 @@
     <label class="option" for="option-1">
       <span class="option__indicator"></span>
       <span class="option__label">
-        Realism
+        Blue
       </span>
     </label>
 
     <label class="option" for="option-2">
       <span class="option__indicator"></span>
       <span class="option__label">
-        Art Deco
+        White
       </span>
     </label>
 
@@ -70,14 +70,14 @@
     <label class="option" for="option-3">
       <span class="option__indicator"></span>
       <span class="option__label">
-        Cubism
+        Grey
       </span>
     </label>
 
     <label class="option" for="option-4">
       <span class="option__indicator"></span>
       <span class="option__label">
-        Abstract
+        Brown
       </span>
     </label>
 
@@ -98,6 +98,10 @@
       <img id= "painting_img_API" src="{{ artist.painting_img }}">
     </div>
   {% endfor %}
+</div>
+
+<div id="footer">
+  <p id="footer-API">Made with the <a id="rijks-API" href="https://www.rijksmuseum.nl/en/api">Rijksmuseum API</a></p>
 </div>
 
 <script src="static/js/toggle.js"></script>
