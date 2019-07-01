@@ -7,7 +7,6 @@
 
 #rijks-API {
   text-decoration: none;
-  margin-top: 100px;
 }
 #rijks-API:hover {
   border-bottom: 2px solid #01420c;
@@ -16,6 +15,8 @@
 
 #footer-API {
   text-align: left;
+  margin-top: 100px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=footer.css.map */
