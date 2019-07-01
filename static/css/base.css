@@ -369,7 +369,7 @@ button {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   background-color: #F7F7F7;
   color: #111;
 }
@@ -397,6 +397,10 @@ body #fact-painter-box {
   width: 600px;
   background-image: url(https://static1.squarespace.com/static/579a733c6b8f5b8f49589edc/t/57b60e27c534a57897b4a854/1471549005008/paint-brushes.jpg?format=1000w);
   z-index: -1;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=base.css.map */
