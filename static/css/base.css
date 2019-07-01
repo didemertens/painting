@@ -163,6 +163,15 @@ button {
   border-bottom: 5px solid #0E1F4F;
 }
 
+#submit, #reset {
+  margin-top: 20px;
+}
+
+#title-quiz {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
 #wrapper {
   text-align: center;
 }
@@ -314,6 +323,11 @@ button {
 .option-input:nth-child(2):checked ~ .option:nth-of-type(2) .option__label,
 .option-input:nth-child(2):checked ~ .option:nth-of-type(2) .option__label::after {
   transform: scale(1);
+}
+
+#answers {
+  margin-top: 75px;
+  font-size: 14pt;
 }
 
 .painter-answer {
