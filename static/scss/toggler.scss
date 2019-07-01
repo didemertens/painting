@@ -29,8 +29,12 @@ $blackblue-gogh: #060F1C;
 // light-mode (normal)
 
 #intro-text.light-mode {
-  background-color: $light-color;
   color: $dark-color;
+  border-bottom: 5px solid #d7dade;
+  height: 309px;
+  margin: 0;
+  padding: 0;
+  background-color: #d7dade;
   a {
     color: $dark-color;
   }
@@ -45,8 +49,11 @@ $blackblue-gogh: #060F1C;
     }
   }
   #fact-painter-box{
-    border-bottom: 5px solid $dark-color;
-    height: 145px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 400px;
+    height: 160px;
+    width: 600px;
     background-image: url(https://static1.squarespace.com/static/579a733c6b8f5b8f49589edc/t/57b60e27c534a57897b4a854/1471549005008/paint-brushes.jpg?format=1000w);
   }
 }
@@ -77,7 +84,7 @@ $blackblue-gogh: #060F1C;
     background-image: none;
     background-color: $blue-mondriaan;
     font-size: 16pt;
-    height: 145px;
+    height: 160px;
     color: $yellow-mondriaan;
     border-bottom: 5px solid $blue-mondriaan;
   }
@@ -108,7 +115,7 @@ $blackblue-gogh: #060F1C;
 
     background-image: none;
     font-size: 16pt;
-    height: 145px;
+    height: 160px;
     background-color: $darkbrown-rembrandt;
     color: $bright-pink-rembrandt;
     border-bottom: 5px solid $darkbrown-rembrandt;
@@ -140,7 +147,7 @@ $blackblue-gogh: #060F1C;
 
     background-image: none;
     background-color: $dark-gogh;
-    height: 145px;
+    height: 160px;
     font-size: 16pt;
     color: $yellow-gogh;
     border-bottom: 5px solid $dark-gogh;

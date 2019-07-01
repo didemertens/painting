@@ -1,6 +1,10 @@
 #intro-text.light-mode {
-  background-color: #F7F7F7;
   color: #111;
+  border-bottom: 5px solid #d7dade;
+  height: 309px;
+  margin: 0;
+  padding: 0;
+  background-color: #d7dade;
 }
 #intro-text.light-mode a {
   color: #111;
@@ -16,8 +20,11 @@
   color: #F7F7F7;
 }
 #intro-text.light-mode #fact-painter-box {
-  border-bottom: 5px solid #111;
-  height: 145px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 400px;
+  height: 160px;
+  width: 600px;
   background-image: url(https://static1.squarespace.com/static/579a733c6b8f5b8f49589edc/t/57b60e27c534a57897b4a854/1471549005008/paint-brushes.jpg?format=1000w);
 }
 
@@ -45,7 +52,7 @@
   background-image: none;
   background-color: #091A6B;
   font-size: 16pt;
-  height: 145px;
+  height: 160px;
   color: #DDC52B;
   border-bottom: 5px solid #091A6B;
 }
@@ -73,7 +80,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   background-image: none;
   font-size: 16pt;
-  height: 145px;
+  height: 160px;
   background-color: #413222;
   color: #F0C7A5;
   border-bottom: 5px solid #413222;
@@ -102,7 +109,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
   background-image: none;
   background-color: #0E1F4F;
-  height: 145px;
+  height: 160px;
   font-size: 16pt;
   color: #C0A532;
   border-bottom: 5px solid #0E1F4F;

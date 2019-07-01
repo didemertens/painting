@@ -5,11 +5,13 @@
 #intro-text {
   text-align: center;
   height: 309px;
+  margin: 0;
+  padding: 0;
+  background-color: #d7dade;
 }
 
 #toggle-painters {
   display: flex;
-  margin-top: 5px;
   padding: 15px;
 }
 
