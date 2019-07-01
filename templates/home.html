@@ -91,7 +91,7 @@
 <div id="answers">
   {% for artist in artists %}
     <div class="painter-answer" id="painter-answer-{{ forloop.counter }}">
-      <p>{{ artist.painter }}, {{ artist.painting_title }}</p>
+      <p>{{ artist.painter }}, "{{ artist.painting_title }}"</p>
       <br>
       <img id= "painting_img_API" src="{{ artist.painting_img }}">
     </div>

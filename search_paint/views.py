@@ -14,7 +14,7 @@ def home(request):
 
 def paintings(request,artist_key):
     API_KEY = settings.API_KEY
-    response = requests.get('https://www.rijksmuseum.nl/api/nl/collection/' + artist_key + '?key=' + API_KEY + '&format=json')
+    response = requests.get('https://www.rijksmuseum.nl/api/en/collection/' + artist_key + '?key=' + API_KEY + '&format=json')
     paint_info = response.json()
     return {
         'painter': paint_info['artObject']['principalMaker'],

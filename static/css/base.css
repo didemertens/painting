@@ -79,7 +79,9 @@ button {
 #intro-text.light-mode #fact-painter-box {
   padding: 10px;
   margin-top: 30px;
-  margin-left: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 160px;
   width: 600px;
   background-image: url(https://static1.squarespace.com/static/579a733c6b8f5b8f49589edc/t/57b60e27c534a57897b4a854/1471549005008/paint-brushes.jpg?format=1000w);
@@ -367,6 +369,7 @@ button {
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   background-color: #F7F7F7;
   color: #111;
 }
@@ -387,7 +390,9 @@ body #fact-painter-box {
   border-bottom: none;
   padding: 10px;
   margin-top: 30px;
-  margin-left: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: 160px;
   width: 600px;
   background-image: url(https://static1.squarespace.com/static/579a733c6b8f5b8f49589edc/t/57b60e27c534a57897b4a854/1471549005008/paint-brushes.jpg?format=1000w);
