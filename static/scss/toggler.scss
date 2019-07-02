@@ -60,6 +60,7 @@ $blackblue-gogh: #060F1C;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
   }
 }
 
@@ -92,6 +93,7 @@ $blackblue-gogh: #060F1C;
     height: 170px;
     color: $yellow-mondriaan;
     border-bottom: 5px solid $blue-mondriaan;
+    border-radius: 5px;
   }
 }
 
@@ -124,6 +126,7 @@ $blackblue-gogh: #060F1C;
     background-color: $darkbrown-rembrandt;
     color: $bright-pink-rembrandt;
     border-bottom: 5px solid $darkbrown-rembrandt;
+    border-radius: 5px;
   }
 }
 
@@ -156,5 +159,6 @@ $blackblue-gogh: #060F1C;
     font-size: 16pt;
     color: $yellow-gogh;
     border-bottom: 5px solid $dark-gogh;
+    border-radius: 5px;
   }
 }

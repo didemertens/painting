@@ -31,6 +31,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 5px;
 }
 
 #intro-text.mondriaan-mode {
@@ -60,6 +61,7 @@
   height: 170px;
   color: #DDC52B;
   border-bottom: 5px solid #091A6B;
+  border-radius: 5px;
 }
 
 #intro-text.rembrandt-mode {
@@ -89,6 +91,7 @@
   background-color: #413222;
   color: #F0C7A5;
   border-bottom: 5px solid #413222;
+  border-radius: 5px;
 }
 
 #intro-text.gogh-mode {
@@ -118,6 +121,7 @@
   font-size: 16pt;
   color: #C0A532;
   border-bottom: 5px solid #0E1F4F;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=toggler.css.map */
