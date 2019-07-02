@@ -4,6 +4,9 @@
 @import "paintings.scss";
 @import "footer.scss";
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Noto Sans TC', sans-serif;
   background-color: $light-color;

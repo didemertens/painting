@@ -369,6 +369,10 @@ button {
   padding: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Noto Sans TC", sans-serif;
   background-color: #F7F7F7;
