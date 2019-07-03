@@ -1,4 +1,12 @@
 // function to calculate the result of the quiz
+function removePaintings() {
+  var answers_paint;
+  answers_paint = document.getElementById("answers").children;
+  Array.from(answers_paint).forEach(function(element) {
+    element.classList.add("painter-answer");
+  });
+}
+
 function tabulateAnswers(event) {
   // initialize variables for each choice's scores
   event.preventDefault();
@@ -35,13 +43,13 @@ function tabulateAnswers(event) {
 
   // Display answer corresponding to that choice
 
-  function removePaintings() {
-    var answers_paint;
-    answers_paint = document.getElementById("answers").children;
-    Array.from(answers_paint).forEach(function(element) {
-      element.classList.add("painter-answer");
-    });
-  }
+  // function removePaintings() {
+  //   var answers_paint;
+  //   answers_paint = document.getElementById("answers").children;
+  //   Array.from(answers_paint).forEach(function(element) {
+  //     element.classList.add("painter-answer");
+  //   });
+  // }
 
   var answerbox = document.getElementById('answers');
   if (c1score == maxscore) { // If user chooses the first choice the most, this outcome will be displayed.
@@ -66,5 +74,6 @@ function tabulateAnswers(event) {
 // program the reset button
 function resetAnswer() {
   var answerbox = document.getElementById('answer');
+  removePaintings();
   answerbox.innerHTML = "Play again!";
 }
