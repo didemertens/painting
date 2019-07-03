@@ -82,7 +82,7 @@
   </div>
 </div>
 
-  <button type="submit" id="submit" onclick="tabulateAnswers(event); jump('answers');">Submit</button>
+  <button class="buttons" type="submit" id="submit" onclick="tabulateAnswers(event); jump('answers');">Submit</button>
 
   </form>
 
@@ -94,7 +94,7 @@
       <br>
       <img id= "painting_img_API" src="{{ artist.painting_img }}">
       <br>
-      <button type="reset" id="reset" onclick="resetAnswer()">Again!</button>
+      <button class="buttons" type="reset" id="reset" onclick="resetAnswer()">Play again</button>
     </div>
   {% endfor %}
 </div>

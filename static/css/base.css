@@ -345,6 +345,7 @@ button {
 #answers {
   margin-top: 75px;
   font-size: 14pt;
+  text-align: center;
 }
 
 .painter-answer {
@@ -372,7 +373,7 @@ button {
 
 #footer-API {
   text-align: left;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 10px;
 }
 
@@ -417,6 +418,15 @@ body #fact-painter-box {
 
 h1, h2 {
   font-family: "Montserrat", sans-serif;
+}
+
+.buttons {
+  font-size: 13pt;
+  text-align: center;
+}
+
+#reset {
+  text-align: center;
 }
 
 /*# sourceMappingURL=base.css.map */
