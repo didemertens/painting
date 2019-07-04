@@ -181,6 +181,10 @@ button {
   border-radius: 5px;
 }
 
+.hidden-quiz {
+  display: none;
+}
+
 #submit, #reset {
   margin-top: 20px;
 }

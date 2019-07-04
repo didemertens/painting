@@ -34,7 +34,9 @@
   <div id="wrapper">
     <h3 id="title-quiz">Find the perfect painting by answering this question!</h3>
 
-  <form id="quiz">
+<button class="buttons" id="start-quiz" onclick="startQuiz()">Start quiz</button>
+
+  <form id="quiz" class="hidden-quiz">
     <h2>What do you want to do right now?</h2>
 
 <div class="option-group">
@@ -106,4 +108,5 @@
 <script src="static/js/toggle.js"></script>
 <script src="static/js/quiz.js"></script>
 <script src="static/js/jump.js"></script>
+<script src="static/js/startquiz.js"></script>
 {% endblock body %}
