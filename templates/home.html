@@ -32,12 +32,12 @@
   </div>
 
   <div id="wrapper">
-    <h3 id="title-quiz">Find the perfect painting by answering this question!</h3>
+    <h3 id="title-quiz">Find the perfect painting with this quiz!</h3>
 
-<button class="buttons" id="start-quiz" onclick="startQuiz()">Start quiz</button>
+<button class="buttons" id="start-quiz" onclick="startQuiz(); jump('question');">Start quiz</button>
 
   <form id="quiz" class="hidden-quiz">
-    <h2>What do you want to do right now?</h2>
+    <h2 id="question">What do you want to do right now?</h2>
 
 <div class="option-group">
   <div class="option-container">

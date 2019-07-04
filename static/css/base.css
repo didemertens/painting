@@ -190,7 +190,7 @@ button {
 }
 
 #title-quiz {
-  margin: 90px 0 80px 0;
+  margin: 110px 0 80px 0;
 }
 
 #wrapper {
@@ -361,8 +361,7 @@ button {
 }
 
 #footer {
-  margin-bottom: 0;
-  margin-top: 100px;
+  margin-top: 150px;
   background-color: #d7dade;
   height: 50px;
 }
