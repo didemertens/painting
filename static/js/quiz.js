@@ -1,3 +1,11 @@
+// function to start the quiz
+function startQuiz() {
+  document.getElementById("quiz").classList.remove('hidden-quiz');
+  var btnquiz = document.getElementById("start-quiz");
+  btnquiz.style.display = "none";
+}
+
+
 // function to calculate the result of the quiz
 function removePaintings() {
   var answers_paint;
