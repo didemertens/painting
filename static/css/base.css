@@ -197,6 +197,11 @@ button {
   margin: 110px 0 80px 0;
 }
 
+@media screen and (max-width: 900px) {
+  #title-quiz {
+    margin-top: 200px;
+  }
+}
 #wrapper {
   text-align: center;
 }
