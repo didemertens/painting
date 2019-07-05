@@ -2,6 +2,10 @@
   display: none;
 }
 
+#start-quiz {
+  font-size: 17pt;
+}
+
 #submit, #reset {
   margin-top: 20px;
 }
