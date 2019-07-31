@@ -1,0 +1,1 @@
+painting.wsgi --log-file -
