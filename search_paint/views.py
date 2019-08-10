@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.shortcuts import render
-from config import API_KEY
+from settings import API_KEY
 import requests
 
 # Create your views here.
