@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.shortcuts import render
-from settings import API_KEY
+# from secret_settings import API_KEY
 import requests
 
 # Create your views here.
@@ -15,6 +15,7 @@ def home(request):
 
 def paintings(request,artist_key):
     # API_KEY = settings.API_KEY
+    API_KEY = 'RyVC4eDK'
     response = requests.get('https://www.rijksmuseum.nl/api/en/collection/' + artist_key + '?key=' + API_KEY + '&format=json')
     paint_info = response.json()
     return {
