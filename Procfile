@@ -1,1 +1,1 @@
-painting.wsgi --log-file -
+web: gunicorn painting.wsgi --log.file -

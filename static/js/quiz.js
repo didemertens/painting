@@ -18,13 +18,13 @@ function removePaintings() {
 function tabulateAnswers(event) {
   // initialize variables for each choice's scores
   event.preventDefault();
-  var c1score = 0;
-  var c2score = 0;
-  var c3score = 0;
-  var c4score = 0;
+  let c1score = 0;
+  let c2score = 0;
+  let c3score = 0;
+  let c4score = 0;
 
   // get a list of the radio inputs on the page
-  var choices = document.getElementsByTagName('input');
+  const choices = document.getElementsByTagName('input');
 
   // loop through all the radio inputs
   for (i=0; i<choices.length; i++) {
@@ -47,7 +47,7 @@ function tabulateAnswers(event) {
   }
 
   // Find out which choice got the highest score.
-  var maxscore = Math.max(c1score,c2score,c3score,c4score);
+  const maxscore = Math.max(c1score,c2score,c3score,c4score);
 
   // Display answer corresponding to that choice
 
@@ -59,7 +59,7 @@ function tabulateAnswers(event) {
   //   });
   // }
 
-  var answerbox = document.getElementById('answers');
+  const answerbox = document.getElementById('answers');
   if (c1score == maxscore) { // If user chooses the first choice the most, this outcome will be displayed.
     removePaintings();
     document.getElementById("painter-answer-1").classList.remove('painter-answer');
@@ -81,7 +81,7 @@ function tabulateAnswers(event) {
 
 // program the reset button
 function resetAnswer() {
-  var answerbox = document.getElementById('answer');
+  const answerbox = document.getElementById('answer');
   removePaintings();
   answerbox.innerHTML = "Play again!";
 }

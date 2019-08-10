@@ -4,10 +4,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-requests = "2.21.0"
 
 [packages]
 django = "*"
+gunicorn = "==19.9.0"
 
 [requires]
 python_version = "3.7"
